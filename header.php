@@ -14,7 +14,7 @@
 	<body>
 		<header>
 			<div class="grilla-2-col mw-700 grilla-v-center">
-				<a href="./"><h1>Sistema de Turnos</h1></a>
+				<a href="./"><h1>Turnos</h1></a>
 			
 				<nav>
 					<a href="index.php">Solicitar turno</a> |
