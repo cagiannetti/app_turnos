@@ -1,0 +1,180 @@
+/* Reset */
+
+* {
+	box-sizing: border-box;
+	font-family: Calibri;
+	border: 0px 0px none;
+}
+
+/* Estilos de uso general */
+
+.grilla-2-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.grilla-3-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.grilla-v-center {
+	align-items:center;
+}
+
+.espaciador-10 {
+	padding:10px;
+}
+
+.p-10{
+	padding:10px;
+}
+
+.p-20{
+	padding:20px;
+}
+
+.espaciador-20 {
+	padding:20px;
+}
+
+.mw-700 {
+	max-width: 700px;
+	margin: auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.m-auto{
+	margin: auto;
+}
+
+.borde-suave {
+	border: 1px solid #eee;
+}
+
+/* Elementos del body */
+
+body {
+	background: #eeeeee;
+	margin: 0;
+}
+
+header {
+	background: #3c4c5e;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+nav {
+	text-align: center;
+}
+
+main{
+	max-width: 700px;
+	margin: auto;
+	background: white;
+	padding: 50px;
+}
+
+/* turnos */
+
+#turnos_lista {
+	border: 1px solid #eee;
+	padding: 10px;
+	text-align: center;
+}
+
+.turno {
+	display: inline-block;
+	background: #3c4c5e;
+	color: white;
+	margin: 5px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+
+/* Formulario */
+
+input, select{
+	font-size:1.1em;
+}
+
+label, input, select {
+	display:block;
+	width:100%;
+}
+
+input, select {
+	padding:10px;
+	border-radius: 5px;
+	border: 1px #999 solid;
+}
+
+/* footer */
+
+footer p {
+	color: #bbbbbb;
+	text-align: center;
+	font-size: 12px;
+	
+}
+
+/* spinner */
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width:768px) {
+	
+	.grilla-2-col {
+		grid-template-columns: 1fr;
+	}
+
+	.grilla-3-col {
+		grid-template-columns: 1fr;
+	}
+}
